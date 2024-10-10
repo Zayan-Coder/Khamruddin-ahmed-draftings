@@ -1,0 +1,244 @@
+/* General reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark mode background */
+    color: #f4f4f4; /* Light text for dark mode */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #1c1c1c; /* Darker navbar */
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #007bff, #343a40); /* Darker gradient for dark mode */
+    color: white;
+    padding: 150px 0; /* Added padding to avoid navbar overlap */
+    text-align: center;
+    margin-top: 60px; /* Offset for fixed navbar */
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Pricing Section */
+.pricing-section {
+    padding: 60px 0;
+    background-color: #1c1c1c; /* Darker background for dark mode */
+    text-align: center;
+}
+
+.pricing-section h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #007bff;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #2c2c2c; /* Dark card background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    color: #f4f4f4;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 32px;
+    color: #007bff;
+}
+
+.card ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+/* Location Section */
+.location-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #1c1c1c;
+}
+
+.location-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 0;
+    background-color: #2c2c2c;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #007bff;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    background-color: #1c1c1c;
+    color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.contact-section form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-section form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Section */
+.footer-section {
+    padding: 20px 0;
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Dark Mode Adjustments */
+body, input, textarea {
+    color: #f4f4f4;
+    background-color: #121212; /* Dark background for inputs and text areas */
+}
+
+h1, h2, h3, p {
+    color: #f4f4f4; /* Ensure headers and paragraphs use light text color */
+}
+
+.navbar, .footer-section, .pricing-section, .location-section, .contact-section, .card {
+    background-color: #1c1c1c; /* Dark background for sections */
+}
+
+.card p, .card ul li {
+    color: #d1d1d1; /* Lighter text color for better readability in dark mode */
+}
+
+/* Add smooth transitions for buttons and interactive elements */
+a, button {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover, a:hover {
+    color: #f4f4f4;
+}
