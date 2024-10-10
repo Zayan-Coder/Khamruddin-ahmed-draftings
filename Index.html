@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Drafting Services</title>
-    <style>
-        /* General reset and base styles */
+    <style> 
+
+/* General reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -37,28 +38,23 @@ body {
 
 .navbar .container {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
     align-items: center;
 }
 
 .logo img {
     height: 50px;
+    margin-right: 10px;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links a {
+.logo span {
+    font-size: 24px;
     color: #f4f4f4;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.nav-links a:hover {
-    color: #007bff;
 }
 
 /* Hero Section */
@@ -108,15 +104,18 @@ body {
 
 .pricing-cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .card {
     background-color: #2c2c2c; /* Dark card background */
     padding: 20px;
     border-radius: 10px;
-    width: 30%;
+    width: 22%; /* Adjusted width to fit 4 cards */
     color: #f4f4f4;
+    transition: transform 0.3s;
 }
 
 .card h3 {
@@ -136,6 +135,22 @@ body {
 
 .card ul li {
     margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile-Responsive Cards */
+@media (max-width: 768px) {
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 80%; /* Cards will now be full width on mobile */
+    }
 }
 
 /* Location Section */
@@ -163,111 +178,11 @@ body {
     color: #007bff;
 }
 
-.contact-section form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-section form input,
-.contact-section form textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #444;
-    background-color: #1c1c1c;
-    color: #f4f4f4;
-    border-radius: 5px;
-}
-
-.contact-section form button {
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contact-section form button:hover {
-    background-color: #0056b3;
-}
-
-/* Footer Section */
-.footer-section {
-    padding: 20px 0;
-    background-color: #1c1c1c;
-    color: white;
-    text-align: center;
-}
-
-.footer-section p {
-    margin-bottom: 10px;
-}
-
-.social-links {
-    list-style: none;
-    padding: 0;
-}
-
-.social-links li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.social-links a {
-    color: white;
-    text-decoration: none;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
-}
-
-/* Dark Mode Adjustments */
-body, input, textarea {
-    color: #f4f4f4;
-    background-color: #121212; /* Dark background for inputs and text areas */
-}
-
-h1, h2, h3, p {
-    color: #f4f4f4; /* Ensure headers and paragraphs use light text color */
-}
-
-.navbar, .footer-section, .pricing-section, .location-section, .contact-section, .card {
-    background-color: #1c1c1c; /* Dark background for sections */
-}
-
-.card p, .card ul li {
-    color: #d1d1d1; /* Lighter text color for better readability in dark mode */
-}
-
-/* Add smooth transitions for buttons and interactive elements */
-a, button {
-    transition: background-color 0.3s, color 0.3s;
-}
-
-button:hover, a:hover {
-    color: #f4f4f4;
-}
-
-/* Contact Section */
-.contact-section {
-    padding: 60px 0;
-    background-color: #2c2c2c;
-    text-align: center;
-}
-
-.contact-section h2 {
-    margin-bottom: 40px;
-    font-size: 36px;
-    color: #007bff;
-}
-
 .contact-options {
     display: flex;
     justify-content: center;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .contact-item {
@@ -275,45 +190,77 @@ button:hover, a:hover {
     padding: 20px;
     border-radius: 10px;
     width: 200px;
+    color: #f4f4f4;
+    text-align: center;
+    transition: background-color 0.3s;
 }
 
 .contact-item h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #f4f4f4;
-}
-
-.contact-item p {
-    font-size: 18px;
-    color: #007bff;
 }
 
 .contact-item a {
     color: #007bff;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 18px;
 }
 
 .contact-item a:hover {
-    text-decoration: underline;
+    color: #0056b3;
 }
 
+/* Footer Section */
+.footer-section {
+    padding: 40px 0;
+    background-color: #1c1c1c;
+    text-align: center;
+}
+
+.footer-section p {
+    color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
+/* Responsive Footer for Mobile */
+@media (max-width: 768px) {
+    .social-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+        
     </style>
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo"> 
+            <a href="#" class="logo">
                 <img src="logo.png" alt="Drafting Services Logo">
+                <span>Drafting Services</span>
             </a>
-            <ul class="nav-links">
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#location">Location</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <header class="hero-section">
         <div class="container">
             <h1>Professional Drafting Services</h1>
@@ -322,6 +269,7 @@ button:hover, a:hover {
         </div>
     </header>
 
+    <!-- Pricing Section -->
     <section id="pricing" class="pricing-section">
         <div class="container">
             <h2>Our Pricing</h2>
@@ -356,10 +304,21 @@ button:hover, a:hover {
                     </ul>
                     <a href="#contact" class="cta-button">Get Started</a>
                 </div>
+                <div class="card">
+                    <h3>Enterprise Plan</h3>
+                    <p>$999</p>
+                    <ul>
+                        <li>Advanced Architectural Design</li>
+                        <li>Full Project Management</li>
+                        <li>Unlimited Revisions</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Get Started</a>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Location Section -->
     <section id="location" class="location-section">
         <div class="container">
             <h2>Our Location</h2>
@@ -371,7 +330,7 @@ button:hover, a:hover {
         </div>
     </section>
 
-    <!-- Updated Contact Section -->
+    <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
             <h2>Contact Us</h2>
@@ -388,6 +347,7 @@ button:hover, a:hover {
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer-section">
         <div class="container">
             <p>&copy; 2024 Drafting Services. All Rights Reserved.</p>
