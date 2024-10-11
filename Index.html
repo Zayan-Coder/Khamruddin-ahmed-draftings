@@ -5,265 +5,265 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Drafting Services</title>
-    <style> 
-/* General reset and base styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <style>
+        /* General reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #121212; /* Dark mode background */
-    color: #f4f4f4; /* Light text for dark mode */
-}
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212; /* Dark mode background */
+            color: #f4f4f4; /* Light text for dark mode */
+        }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-/* Navbar Styles */
-.navbar {
-    background-color: #1c1c1c; /* Darker navbar */
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
+        /* Navbar Styles */
+        .navbar {
+            background-color: #1c1c1c; /* Darker navbar */
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
 
-.navbar .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
+        .logo {
+            display: flex;
+            align-items: center;
+        }
 
-.logo img {
-    height: 50px;
-    margin-right: 10px;
-}
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
 
-.logo span {
-    font-size: 24px;
-    color: #f4f4f4;
-}
+        .logo span {
+            font-size: 24px;
+            color: #f4f4f4;
+        }
 
-/* Hero Section */
-.hero-section {
-    background: linear-gradient(to right, #007bff, #343a40); /* Darker gradient for dark mode */
-    color: white;
-    padding: 150px 0; /* Added padding to avoid navbar overlap */
-    text-align: center;
-    margin-top: 60px; /* Offset for fixed navbar */
-}
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(to right, #007bff, #343a40); /* Darker gradient for dark mode */
+            color: white;
+            padding: 150px 0; /* Added padding to avoid navbar overlap */
+            text-align: center;
+            margin-top: 60px; /* Offset for fixed navbar */
+        }
 
-.hero-section h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
+        .hero-section h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
 
-.hero-section p {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
+        .hero-section p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
 
-.cta-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
+        .cta-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
 
-.cta-button:hover {
-    background-color: #0056b3;
-}
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
 
-/* Pricing Section */
-.pricing-section {
-    padding: 60px 0;
-    background-color: #1c1c1c; /* Darker background for dark mode */
-    text-align: center;
-}
+        /* Pricing Section */
+        .pricing-section {
+            padding: 60px 0;
+            background-color: #1c1c1c; /* Darker background for dark mode */
+            text-align: center;
+        }
 
-.pricing-section h2 {
-    margin-bottom: 40px;
-    font-size: 36px;
-    color: #007bff;
-}
+        .pricing-section h2 {
+            margin-bottom: 40px;
+            font-size: 36px;
+            color: #007bff;
+        }
 
-.pricing-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
+        .pricing-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
 
-.card {
-    background-color: #2c2c2c; /* Dark card background */
-    padding: 20px;
-    border-radius: 10px;
-    width: 22%; /* Adjusted width to fit 4 cards */
-    color: #f4f4f4;
-    transition: transform 0.3s;
-}
+        .card {
+            background-color: #2c2c2c; /* Dark card background */
+            padding: 20px;
+            border-radius: 10px;
+            width: 22%; /* Adjusted width to fit 4 cards */
+            color: #f4f4f4;
+            transition: transform 0.3s;
+        }
 
-.card h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
 
-.card p {
-    font-size: 32px;
-    color: #007bff;
-}
+        .card p {
+            font-size: 32px;
+            color: #007bff;
+        }
 
-.card ul {
-    list-style: none;
-    margin-bottom: 20px;
-}
+        .card ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
 
-.card ul li {
-    margin-bottom: 10px;
-}
+        .card ul li {
+            margin-bottom: 10px;
+        }
 
-.card:hover {
-    transform: scale(1.05);
-}
+        .card:hover {
+            transform: scale(1.05);
+        }
 
-/* Mobile-Responsive Cards */
-@media (max-width: 768px) {
-    .pricing-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .card {
-        width: 80%; /* Cards will now be full width on mobile */
-    }
-}
+        /* Mobile-Responsive Cards */
+        @media (max-width: 768px) {
+            .pricing-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .card {
+                width: 80%; /* Cards will now be full width on mobile */
+            }
+        }
 
-/* Location Section */
-.location-section {
-    padding: 60px 0;
-    text-align: center;
-    background-color: #1c1c1c;
-}
+        /* Location Section */
+        .location-section {
+            padding: 60px 0;
+            text-align: center;
+            background-color: #1c1c1c;
+        }
 
-.location-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
+        .location-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
 
-/* Contact Section */
-.contact-section {
-    padding: 60px 0;
-    background-color: #2c2c2c;
-    text-align: center;
-}
+        /* Contact Section */
+        .contact-section {
+            padding: 60px 0;
+            background-color: #2c2c2c;
+            text-align: center;
+        }
 
-.contact-section h2 {
-    margin-bottom: 40px;
-    font-size: 36px;
-    color: #007bff;
-}
+        .contact-section h2 {
+            margin-bottom: 40px;
+            font-size: 36px;
+            color: #007bff;
+        }
 
-.contact-options {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
+        .contact-options {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
 
-.contact-item {
-    background-color: #1c1c1c;
-    padding: 20px;
-    border-radius: 10px;
-    width: 220px; /* Increased width for button content */
-    color: #f4f4f4;
-    text-align: center;
-    transition: background-color 0.3s;
-    word-wrap: break-word; /* Ensure text wraps within the button */
-}
+        .contact-item {
+            background-color: #1c1c1c;
+            padding: 20px;
+            border-radius: 10px;
+            width: 220px; /* Increased width for button content */
+            color: #f4f4f4;
+            text-align: center;
+            transition: background-color 0.3s;
+            word-wrap: break-word; /* Ensure text wraps within the button */
+        }
 
-.contact-item h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
+        .contact-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
 
-.contact-item a {
-    display: block;
-    color: #007bff;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 0; /* Adjust padding for better fit */
-    border-radius: 5px;
-    background-color: #2c2c2c;
-    border: 1px solid #007bff;
-}
+        .contact-item a {
+            display: block;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 0; /* Adjust padding for better fit */
+            border-radius: 5px;
+            background-color: #2c2c2c;
+            border: 1px solid #007bff;
+        }
 
-.contact-item a:hover {
-    color: #0056b3;
-    background-color: #333;
-}
+        .contact-item a:hover {
+            color: #0056b3;
+            background-color: #333;
+        }
 
-/* Ensure buttons and text don't overflow on mobile */
-@media (max-width: 768px) {
-    .contact-item {
-        width: 100%; /* Full width on mobile */
-    }
+        /* Ensure buttons and text don't overflow on mobile */
+        @media (max-width: 768px) {
+            .contact-item {
+                width: 100%; /* Full width on mobile */
+            }
 
-    .contact-item a {
-        font-size: 16px; /* Slightly smaller font size for mobile */
-        padding: 12px;
-    }
-}
+            .contact-item a {
+                font-size: 16px; /* Slightly smaller font size for mobile */
+                padding: 12px;
+            }
+        }
 
-/* Footer Section */
-.footer-section {
-    padding: 40px 0;
-    background-color: #1c1c1c;
-    text-align: center;
-}
+        /* Footer Section */
+        .footer-section {
+            padding: 40px 0;
+            background-color: #1c1c1c;
+            text-align: center;
+        }
 
-.footer-section p {
-    color: #f4f4f4;
-    margin-bottom: 20px;
-}
+        .footer-section p {
+            color: #f4f4f4;
+            margin-bottom: 20px;
+        }
 
-.social-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
+        .social-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
 
-.social-links a {
-    color: #007bff;
-    text-decoration: none;
-    font-size: 18px;
-}
+        .social-links a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 18px;
+        }
 
-.social-links a:hover {
-    color: #0056b3;
-}
+        .social-links a:hover {
+            color: #0056b3;
+        }
 
-/* Responsive Footer for Mobile */
-@media (max-width: 768px) {
-    .social-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
+        /* Responsive Footer for Mobile */
+        @media (max-width: 768px) {
+            .social-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -280,9 +280,9 @@ body {
     <!-- Hero Section -->
     <header class="hero-section">
         <div class="container">
-            <h1>Professional letter Drafting Services</h1>
+            <h1>Professional Letter Drafting Services</h1>
             <p>Your vision, our precision</p>
-            <p>by Khamruddin-ahmed</p>
+            <p>by Khamruddin-Ahmed</p>
             <a href="#contact" class="cta-button">Call or Email Us</a>
         </div>
     </header>
@@ -290,27 +290,29 @@ body {
     <!-- Pricing Section -->
     <section id="pricing" class="pricing-section">
         <div class="container">
-            <h2>Our services</h2>
+            <h2>Our Services</h2>
             <div class="pricing-cards">
                 <div class="card">
-                    <h3>we provide all kinds of letter Draftings</h3>
-                    <p>contact for pricing</p>
+                    <h3>We provide all kinds of letter drafting</h3>
+                    <p>Contact for pricing</p>
                     <ul>
-                        <li>●English Drafting</li>
-                        <li>●telugu Drafting</li>
-                        <li>●and translations</li>
+                        <li>● English Drafting</li>
+                        <li>● Telugu Drafting</li>
+                        <li>● And Translations</li>
                     </ul>
                     <a href="#contact" class="cta-button">Get Started</a>
                 </div>
+            </div>
+        </div>
     </section>
 
     <!-- Location Section -->
     <section id="location" class="location-section">
         <div class="container">
             <h2>Our Location</h2>
-            <p>county:India,state:Telangana,city:Godavarikhani(Khamruddin-ahmed-draftings)</p>
+            <p>Country: India, State: Telangana, City: Godavarikhani (Khamruddin-Ahmed-Draftings)</p>
             <iframe
-                src="https:https://maps.app.goo.gl/PAcjC1FXHVA6bHZ1A,DC&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Godavarikhani%20Khamruddin-Ahmed-draftings&t=&z=13&ie=UTF8&iwloc=&output=embed"
                 width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                 tabindex="0"></iframe>
         </div>
@@ -323,11 +325,11 @@ body {
             <div class="contact-options">
                 <div class="contact-item">
                     <h3>Call Us</h3>
-                    <p><a href="92990 57557"></a>+91 92990 57557</p>
+                    <p><a href="tel:+919299057557">+91 92990 57557</a></p>
                 </div>
                 <div class="contact-item">
                     <h3>Email Us</h3>
-                    <p><a href="mailto:khamar4754@gmail.com">khamar4754@gmail.com/a></p>
+                    <p><a href="mailto:khamar4754@gmail.com">khamar4754@gmail.com</a></p>
                 </div>
             </div>
         </div>
